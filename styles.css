@@ -1,0 +1,57 @@
+header {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 300;
+  color: rgb(243, 247, 250);
+  font-style: normal;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+body{
+    background: #53D9FE;
+    background: linear-gradient(180deg, rgba(83, 217, 254, 1) 12%, rgba(78, 187, 255, 1) 78%);
+}
+
+.four-columns{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+    padding: 1.5rem;
+    gap: 2rem;
+
+}
+
+.four-columns section {
+  flex: 1;
+  background-color: rgb(247, 247, 239);
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #015197;
+  border-width: 0.5em;
+  padding-left: 1em;
+
+  
+}
+
+.four-columns h2 {
+  color: rgb(225, 38, 9);
+
+  
+}
+.four-columns a {
+    color: #2D9BEA;
+}
+
+
+.four-columns ul {
+  list-style-type: none;
+  padding-left: 0.25em;
+}
+
+
+@media (max-width: 900px) {
+  .four-columns {
+    flex-direction: column;
+  }
+}
