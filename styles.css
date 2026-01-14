@@ -12,15 +12,26 @@ header{
 }
 
 #banner{
-    background-image: url(images/banner.png);
-    width: 100%;
-    height: 250px;
-    margin: 0 auto;
+   background-image: url(images/matchabanner.png);
+   width: 100%;
+   height: 250px;
 }
 
+#bookmark{
+    position: absolute;
+    top: 0;
+    right: 2rem;    
+    width: 150px;    
+    height: 200px;
+    background-image: url(images/bookmark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
 body{
-    background: #53D9FE;
-    background: linear-gradient(180deg, rgba(83, 217, 254, 1) 12%, rgba(78, 187, 255, 1) 78%);
+    background: #FFEAD1;
+    margin: 0;
+    
 }
 
 .four-columns{
@@ -38,10 +49,10 @@ body{
 
 .four-columns section {
   flex: 1;
-  background-color: rgb(247, 247, 239);
+  background-color: rgb(239, 247, 245);
   border-radius: 30px;
   border-style: solid;
-  border-color: #015197;
+  border-color: #b7833a;
   border-width: 0.5em;
   padding-left: 1em;
   padding-bottom: 2.5em;
@@ -50,22 +61,22 @@ body{
 }
 
 .four-columns h2 {
-  color: rgb(225, 38, 9);
+  color: rgb(210, 146, 10);
 
   
 }
 .four-columns a {
-    color: #2D9BEA;
+    color: #dcae4b;
     list-style-type: none;
     padding-left: 0.25em;
     margin-bottom: 0.75rem;
     transition: opacity, 0.5s ease;
 }
  .four-columns a:hover {
-    background-color: #5ea3d1;
+    background-color: #7d4a25;
     color: aliceblue;
     border-style: solid;
-    border-color: #015197;
+    border-color: #b5a711;
     border-radius: 20px;
     padding: 0.5em;
  }
