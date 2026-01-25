@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="message"></h2>
+
+    <script>
+        var userColor = prompt("Hey! What kind of color are you hungry for today? (select from purple, blue, red, yellow)", "");
+        var colors = ['purple', 'blue', 'red', 'yellow'];
+        var uniqueMessage = document.querySelector(".message"); 
+
+        if (userColor) userColor = userColor.toLowerCase();
+
+        function isValidColor(color) {
+            for (let i = 0; i < colors.length; i++) {
+                if (color === colors[i]) {
+                    return true;
+                }
+            }
+            return false; 
+        }
+
+        if (isValidColor(userColor)) {
+            document.body.style.backgroundColor = userColor;
+
+            if (userColor === "red") {
+                uniqueMessage.innerHTML = "Oooh <em> red!!...might I suggest some strawberries? How about some pizza? Maybe some tomato pasta?? That sounds good!!";
+            } else if (userColor === "blue") {
+                uniqueMessage.innerHTML = "Oooh <em> blue!!...might I suggest some blueberries? Maybe a blue dessert, like a blueberry pie, cheesecake, or muffins!";
+            } else if (userColor === "yellow") {
+                uniqueMessage.innerHTML = "Oooh <em> yellow!!...might I suggest some bananas? Or some eggs, maybe like an omelette! Ooh I've recently seen banana matcha lattes becoming popular!! Maybe a banana drink sounds wonderful!";
+            } else if (userColor === "purple") {
+                uniqueMessage.innerHTML = "Oooh <em> purple!!...might I suggest some ube? Have you heard of ube? It's a purple yam from the Philippines! I've seen some ube flavored coffee! Sounds good as a dessert don't you think!";
+            } 
+        }
+            else {
+                uniqueMessage.innerHTML = "Oops! That color is not in the list. Please try again!!";
+        }
+    </script>
+</body>
+</html>
