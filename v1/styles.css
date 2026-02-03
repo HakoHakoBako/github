@@ -30,7 +30,11 @@ body {
 
 main {
     display: flex;
-    margin:auto;
+    flex-direction: column;
+    margin: auto;
+}
+.top-layout {
+    display: flex;
 }
 
 section {
@@ -45,10 +49,31 @@ form {
   max-width: 400px;
 }
 
+#bottom-layout {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+}
 
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-text-box {
+    border: 3px solid #2B6951; 
+    padding: 20px;
+    border-radius: 12px; 
+    background-color: #F2E6C9; 
+    max-width: 650px; 
+}
 label {
   margin-top: 8px;
 }
+
 img {
     padding: 0 40px;
     max-width: 100%;

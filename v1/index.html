@@ -3,74 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
     <script src="script.js" defer></script> 
     <title>MadLibsV1</title>
 </head>
+
 <body>
-    <header>
-        <h1>Madlibs Cafe</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>Madlibs Menu</h2>
-            <img src ="images/formBefore.png" height = "550" width="450" alt ="Form before submit">
-        </section>
+<header>
+    <h1>Madlibs Cafe</h1>
+</header>
 
-        <section id ="formquestions">
-            <form>
-                <label for="noun1">Noun:</label>
-                <input type="text" id="noun1" required>
+<main>
 
-                <label for="adjective1">Adjective:</label>
-                <input type="text" id="adjective1" required>
+<!-- TOP LAYOUT -->
+<section class="top-layout">
 
-                <label for="noun2">Noun:</label>
-                <input type="text" id="noun2" required>
+    <section>
+        <h2>Madlibs Menu</h2>
+        <img src="images/formBefore.png" height="550" width="450" alt="Form before submit">
+    </section>
 
-                <label for="noun3">Noun:</label>
-                <input type="text" id="noun3" required>
+    <section id="formquestions">
+        <form>
+            <label for="noun1">Noun:</label>
+            <input type="text" id="noun1" required>
 
-                <label for="number">Number:</label>
-                <input type="number" id="number" required>
+            <label for="adjective1">Adjective:</label>
+            <input type="text" id="adjective1" required>
 
-                <label for="verb">Verb:</label>
-                <input type="text" id="verb" required>
+            <label for="noun2">Noun:</label>
+            <input type="text" id="noun2" required>
 
-                <label for="adjective2">Adjective:</label>
-                <input type="text" id="adjective2" required>
+            <label for="noun3">Noun:</label>
+            <input type="text" id="noun3" required>
 
-                <label for="adjective3">Adjective:</label>
-                <input type="text" id="adjective3" required>
+            <label for="number">Number:</label>
+            <input type="number" id="number" required>
 
-                <label for="noun4">Noun:</label>
-                <input type="text" id="noun4" required>
+            <label for="verb">Verb:</label>
+            <input type="text" id="verb" required>
 
-                <label for="adjective4">Adjective:</label>
-                <input type="text" id="adjective4" required>
+            <label for="adjective2">Adjective:</label>
+            <input type="text" id="adjective2" required>
 
-                <button type="submit">View your order!</button>
-            </form>
+            <label for="adjective3">Adjective:</label>
+            <input type="text" id="adjective3" required>
 
-        </section>
+            <label for="noun4">Noun:</label>
+            <input type="text" id="noun4" required>
 
-        <!-- Fix layout for final output -->
-         
-        <!-- <article id ="formoutput">
-            <h2>Here is your order! Enjoy....hopefully</h2>
-            <p>Hello! Welcome to the (noun) Cafe!
-            Here at the cafe, we only serve the most (adjective) (noun) within the city! To get you started, how about a (noun)!...oh you sure? I personally wouldn’t recommend it.</p>
+            <label for="adjective4">Adjective:</label>
+            <input type="text" id="adjective4" required>
+
+            <button type="submit">View your order!</button>
+        </form>
+    </section>
+
+</section>
+
+<!-- BOTTOM LAYOUT -->
+<article id="bottom-layout">
+
+    <section class="image-column">
+        <img src="images/formAfter.png" height="550" width="450" alt="Form after submit">
+    </section>
+
+    <section>
+        <h2>Here is your order! Enjoy....hopefully</h2>
+
+        <section class="bottom-text-box">
+            <p>Hello! Welcome to the (noun) Cafe! Here at the cafe, we only serve the most (adjective) (noun) within the city! To get you started, how about a (noun)!...oh you sure? I personally wouldn’t recommend it.</p>
 
             <p>….Are you really sure?...Um ok don’t say I didn’t warn you. I’ll get it to you as soon as possible then. (number_____5__) minutes later…here you go! Thank you so much for (verb ending in ing____6___), let me know how it tastes…</p>
 
             <p>So how did it taste!...Oh it was (adjective__7_____) huh?? Well what did i tell you?!?! It’s the most (adjective___8____) item on the menu!! I don't even like it! Did you want to order anything else?? I personally recommend the (noun____9___)..oh you were traumatized by that? And whose fault is that??...You know what, here's your check! Um…have a (adjective____10___) day!</p>
-        </article> -->
-    </main>
-    
+        </section>
+    </section>
+
+</article>
+
+</main>
+
 </body>
 </html>
