@@ -1,0 +1,58 @@
+header{
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 150;
+  background-color: #2B6951;
+  color: rgb(243, 247, 250);
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+margin: 0;  
+}
+
+h2 {
+font-family: "Cherry Bomb One", system-ui;
+font-weight: 150;
+color: rgb(26, 95, 80);
+font-style: normal;
+font-size: 2rem;
+text-align: center
+}
+
+
+body {
+    background-color: #E6D0AC;
+}
+
+
+main {
+    display: flex;
+    margin:auto;
+}
+
+section {
+    flex: 1;
+    padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  max-width: 400px;
+}
+
+
+label {
+  margin-top: 8px;
+}
+img {
+    padding: 0 40px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(10px);
+}
