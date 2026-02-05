@@ -7,7 +7,7 @@
     const madlibsOverlay = document.querySelector("#madlibsOverlay");
     const closeButton = document.querySelector("#closeButton");
 
-    // Hide overlay at start
+    
     madlibsOverlay.style.display = "none";
 
     myForm.addEventListener('submit', function (e){
@@ -79,20 +79,20 @@
             return;
         } 
 
-        // Build the story
+       
         userText = `Hello! Welcome to the ${noun1} Cafe! Here at the cafe, we only serve the most ${adj1} ${noun2} within the city! To get you started, how about a ${noun3}!...oh you sure? I personally would not recommend it.`;
 
-        userText += ` ….Are you really sure?...Um ok don't say I didn't warn you. I'll get it to you as soon as possible then. (${num1} minutes later)…here you go! Thank you so much for ${verb1}, let me know how it tastes…`;
+        userText += `<br><br> ….Are you really sure?...Um ok don't say I didn't warn you. I'll get it to you as soon as possible then. (${num1} minutes later)…here you go! Thank you so much for ${verb1}, let me know how it tastes…`;
 
-        userText += ` So how did it taste!...Oh it was ${adj2} huh?? Well what did I tell you?!?! It's the most ${adj3} item on the menu!! I don't even like it! Did you want to order anything else?? I personally recommend the ${noun4}..oh you were traumatized by that? And whose fault is that??...You know what, here's your check! Um…have a ${adj4} day!`;
+        userText += ` <br><br>So how did it taste!...Oh it was ${adj2} huh?? Well what did I tell you?!?! It's the most ${adj3} item on the menu!! I don't even like it! Did you want to order anything else?? I personally recommend the ${noun4}..oh you were traumatized by that? And whose fault is that??...You know what, here's your check! Um…have a ${adj4} day!`;
 
-        // Put text in overlay
+       
         madlib.innerHTML = userText;
 
-        // Show overlay
+        
         madlibsOverlay.style.display = "block";
 
-        // Clear inputs
+       
         const textFields = document.querySelectorAll('input[type=text]');
         for (let i = 0; i < textFields.length; i++){
             textFields[i].value = "";
