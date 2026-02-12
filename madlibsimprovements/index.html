@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script> 
+    <title>MadLibsV1</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Madlibs Cafe</h1>
+</header>
+
+<main>
+
+    <section class="menu-visual">
+        <img src="images/v2formbefore(1).png" alt="form decoration">
+
+       
+        <section id="madlibs-form">
+            <h2>Menu Options!</h2>
+
+            <form id="myform" class="madlibs-form">  
+
+                <div class="field">
+                    <label for="noun1">Noun</label>
+                    <input type="text" id="noun1">
+                </div>
+
+                <div class="field">
+                    <label for="adj1">Adjective</label>
+                    <input type="text" id="adj1">
+                </div>
+
+                <div class="field">
+                    <label for="noun2">Second Noun</label>
+                    <input type="text" id="noun2">
+                </div>
+
+                <div class="field">
+                    <label for="noun3">Third Noun</label>
+                    <input type="text" id="noun3">
+                </div>
+
+                <div class="field">
+                    <label for="number1">Number</label>
+                    <input type="text" id="number1">
+                </div>
+
+                <div class="field">
+                    <label for="verb1">Verb ending in -ing</label>
+                    <input type="text" id="verb1">
+                </div>
+
+                <div class="field">
+                    <label for="adj2">Second Adjective</label>
+                    <input type="text" id="adj2">
+                </div>
+
+                <div class="field">
+                    <label for="adj3">Third Adjective</label>
+                    <input type="text" id="adj3">
+                </div>
+
+                <div class="field">
+                    <label for="noun4">Fourth Noun</label>
+                    <input type="text" id="noun4">
+                </div>
+
+                <div class="field">
+                    <label for="adj4">Fourth Adjective</label>
+                    <input type="text" id="adj4">
+                </div>
+
+                <input type="submit" value="View your order!">
+
+            </form>
+        </section>
+    </section>
+
+</main>
+
+<div id="madlibsOverlay">
+    <article>
+        <img src="images/formAfter(2).png" width ="500" alt="form output decoration">
+        <p id="madlib-text"></p>
+        <p><a href="#" id="closeButton">Place another order...?</a></p>
+    </article>
+</div>
+
+</body>
+</html>

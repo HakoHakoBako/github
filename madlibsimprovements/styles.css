@@ -1,0 +1,139 @@
+header{
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 150;
+  background-color: #2B6951;
+  color: rgb(243, 247, 250);
+  font-style: normal;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 2px;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+
+main {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+
+.menu-visual {
+  flex: 1.25;
+  position: relative; 
+}
+
+.menu-visual img {
+  width: 100%;
+  max-width: 1000px; 
+  display: block;
+  margin: 0 auto;
+}
+
+
+main h2{
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 150;
+  color: rgb(26, 95, 80);
+  font-style: normal;
+  font-size: 2rem;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+
+#madlibs-form {
+  font-family: "Poppins", sans-serif;
+  position: absolute;  
+  top: 18%;             
+  left: 50%;            
+  transform: translateX(-10%); 
+  transform: translateY(-20%); 
+  width: 420px;    
+  background: rgba(255, 255, 255, 0); 
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+#madlibs-form h2 {
+  white-space: nowrap;
+  text-align: left;
+}
+
+
+#myform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 6px;
+  width: 100%;
+}
+
+
+.field {
+  display: block;
+}
+
+
+#madlibs-form label {
+  display: flex;
+  margin-top: 5px;
+}
+
+#madlibs-form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #2B6951;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+#madlibs-form input[type="text"]:focus {
+  outline: none;
+  border-color: #1A5F50;
+  box-shadow: 0 0 5px rgba(26, 95, 80, 0.4);
+}
+
+
+#madlibs-form input[type="submit"] {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}
+
+
+#madlibsOverlay{
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#madlibsOverlay article {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 30px;
+    background: rgb(232, 231, 202);
+    border-radius: 30px;
+}
