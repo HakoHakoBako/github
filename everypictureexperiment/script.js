@@ -1,8 +1,8 @@
-const mainImage = document.getElementById("mainImage");
+const mainImage = document.querySelector("#mainImage");
 const hoverZones = document.querySelectorAll(".hover-zone");
 const outlines = document.querySelectorAll(".outline");
-const overlay = document.getElementById("pictureoverlayorange");
-const closeButton = document.getElementById("closeButton");
+const overlay = document.querySelector("#pictureoverlayorange");
+const closeButton = document.querySelector("#closeButton");
 
 // Hide all outlines
 function resetOutlines() {
@@ -11,7 +11,7 @@ function resetOutlines() {
   }
 }
 
-// Loop through hover zones
+// Hover effects
 for (let i = 0; i < hoverZones.length; i++) {
 
   hoverZones[i].addEventListener("mouseenter", function() {
@@ -27,7 +27,7 @@ for (let i = 0; i < hoverZones.length; i++) {
 
 }
 
-// Click overlay (add the other hover zones later)
+// Click overlay (add rest of overlays later)
 hoverZones[0].addEventListener("click", function() {
   overlay.style.display = "flex";
 });
