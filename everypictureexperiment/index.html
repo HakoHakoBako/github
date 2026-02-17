@@ -8,28 +8,41 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="image-container">
+    <main>
+        <h1>Every Picture Experiment</h1>
+        <h2>Over and click through the images! Each figure reveals a part about me!</h2>
+        <div class="image-container">
 
-    <!-- Main Image -->
-    <img id="mainImage" src="images/mainimage.svg" class="layer">
+        <!-- Main Image -->
+        <img id="mainImage" src="images/mainimage.svg" class="layer">
 
-    <!-- Outline Layers -->
-    <img src="images/orangehover.svg" class="layer outline">
-    <img src="images/pinkhover (1).svg" class="layer outline">
-    <img src="images/bluehover.svg" class="layer outline">
-    <img src="images/grayhover.svg" class="layer outline">
-    <img src="images/greenhover.svg" class="layer outline">
-    <img src="images/lavenderhover.svg" class="layer outline">
+        <!-- Outline Layers -->
+        <img src="images/orangehover.svg" class="layer outline">
+        <img src="images/pinkhover.svg" class="layer outline">
+        <img src="images/bluehover.svg" class="layer outline">
+        <img src="images/grayhover.svg" class="layer outline">
+        <img src="images/greenhover.svg" class="layer outline">
+        <img src="images/lavenderhover.svg" class="layer outline">
 
-    <!-- Image Hover Zones -->
-    <div class="hover-zone" style="top: 200px; left: 90px;"></div>
-    <div class="hover-zone" style="top: 200px; left: 250px;"></div>
-    <div class="hover-zone" style="top: 200px; left: 450px;"></div>
-    <div class="hover-zone" style="top: 200px; left: 625px;"></div>
-    <div class="hover-zone" style="top: 200px; left: 850px;"></div>
-    <div class="hover-zone" style="top: 200px; left: 1050px;"></div>
+        <!-- Image Hover Zones -->
+        <div id="orangeZone" class="hover-zone" style="top: 200px; left: 90px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 250px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 450px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 625px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 850px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 1050px;"></div>
+    
+    </div>
+
+    <div id="pictureoverlayorange">
+        <article>
+            <img src="images/dimoo (1).png" width ="500" alt="form output decoration">
+            <p><a href="#" id="closeButton">Learn even more about me!! Click through the other images!</a></p>
+        </article>
+    </div>
+
+</main>
     
 
-</div>
 </body>
 </html>
