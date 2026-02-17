@@ -9,19 +9,22 @@ body {
 
 .image-container {
   position: relative;
-  width: 600px; /* match SVG size */
+  width: 1200px;
+  height: 750px;
 }
 
-/* Stack all images */
+
 .layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: contain; 
   transition: opacity 0.3s ease;
 }
 
-/* Main image at bottom */
+
 #mainImage {
   position: absolute;
   top: 0;
@@ -29,28 +32,22 @@ body {
   width: 100%;
   z-index: 1;
   opacity: 1;
-  /* transition: opacity 0.3s ease; */
+ 
 }
 
-/* Outlines above */
+
 .outline {
   z-index: 2;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Hover zones on top */
+
 .hover-zone {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px; 
+  height: 500px;
   cursor: pointer;
   z-index: 3;
-}
-
-.hover-zone {
   /* background: rgba(255, 0, 0, 0.3); */
-  width: 80px;
-  height: 250px;
-
 }

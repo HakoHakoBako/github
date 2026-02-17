@@ -1,32 +1,28 @@
-const mainImage = document.getElementById("mainImage");
-const hoverZones = document.querySelectorAll(".hover-zone");
-const outlines = document.querySelectorAll(".outline");
+let mainImage = document.getElementById("mainImage");
+let hoverZones = document.querySelectorAll(".hover-zone");
+let outlines = document.querySelectorAll(".outline");
 
-hoverZones.forEach((zone, index) => {
+for (let i = 0; i < hoverZones.length; i++) {
 
-  zone.addEventListener("mouseenter", () => {
+  hoverZones[i].addEventListener("mouseenter", function() {
 
-    // Hide all outlines
-    outlines.forEach(outline => {
-      outline.style.opacity = 0;
-    });
-
-    // Hide main
+    resetOutlines(); 
     mainImage.style.opacity = 0;
+    outlines[i].style.opacity = 1;
 
-    // Show corresponding outline
-    outlines[index].style.opacity = 1;
   });
 
-  zone.addEventListener("mouseleave", () => {
+  hoverZones[i].addEventListener("mouseleave", function() {
 
-    // Hide outlines
-    outlines.forEach(outline => {
-      outline.style.opacity = 0;
-    });
-
-    // Show main again
+    resetOutlines();
     mainImage.style.opacity = 1;
+
   });
 
-});
+}
+
+function resetOutlines() {
+  for (let i = 0; i < outlines.length; i++) {
+    outlines[i].style.opacity = 0;
+  }
+}
