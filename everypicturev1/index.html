@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture V1 HTML & CSS only</title>
+    <link rel = "stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Every Picture Experiment</h1>
+        <h2>Over and click through the images! Each figure reveals a part about me!</h2>
+        <div class="image-container">
+
+        <!-- Main Image -->
+        <img id="mainImage" src="images/mainimage.svg" alt = "meInDifferentOutfits" class="layer">
+
+        <!-- Outline Layers -->
+        <img src="images/orangehover.svg" alt = "orange" class="layer outline">
+        <img src="images/pinkhover.svg" alt = "pink" class="layer outline">
+        <img src="images/bluehover.svg" alt = "blue" class="layer outline">
+        <img src="images/grayhover.svg" alt = "gray" class="layer outline">
+        <img src="images/greenhover.svg" alt = "green" class="layer outline">
+        <img src="images/lavenderhover.svg" alt = "lavender" class="layer outline">
+
+        <!-- Image Hover Zones -->
+        <div id="orangeZone" class="hover-zone" style="top: 200px; left: 90px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 250px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 450px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 625px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 850px;"></div>
+        <div class="hover-zone" style="top: 200px; left: 1050px;"></div>
+    
+    </div>
+
+    <div id="pictureoverlayorange">
+        <article>
+            <img src="images/dimoopenguin.png" width ="500" alt="form output decoration">
+            <p><a href="#" id="closeButton">Learn even more about me!! Click through the other images!</a></p>
+        </article>
+    </div>
+
+</main>
+    
+
+</body>
+</html>
