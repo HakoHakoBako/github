@@ -1,10 +1,15 @@
+(function() {
+"use strict";
+console.log("reading js");
+
 const hoverZones = document.querySelectorAll(".hover-zone");
 const outlines = document.querySelectorAll(".outline");
 const overlays = document.querySelectorAll(".overlay");
 const closeButtons = document.querySelectorAll(".closeOverlay");
 const mainImage = document.querySelector("#mainImage");
 
-// hovers
+
+// Hover Effects
 
 for (let i = 0; i < hoverZones.length; i++) {
 
@@ -19,16 +24,12 @@ for (let i = 0; i < hoverZones.length; i++) {
 }
 
 
-// open overlay
+// Open overlay
 
 for (let i = 0; i < hoverZones.length; i++) {
 
     hoverZones[i].addEventListener("click", function () {
-
-        const overlayId = hoverZones[i].getAttribute("data-overlay");
-        const overlay = document.getElementById(overlayId);
-
-        overlay.style.display = "flex";
+        overlays[i].style.display = "flex";
         mainImage.style.opacity = 0.3;
 
     });
@@ -36,7 +37,7 @@ for (let i = 0; i < hoverZones.length; i++) {
 }
 
 
-// close overlay
+// Close overlay
 
 for (let i = 0; i < closeButtons.length; i++) {
 
@@ -55,3 +56,5 @@ for (let i = 0; i < closeButtons.length; i++) {
     });
 
 }
+
+})();
