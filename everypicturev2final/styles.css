@@ -7,15 +7,10 @@ body {
 }
 
 h1 {
-    margin-top: 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cherry Bomb One", system-ui;
+    color:#071961;
 }
 
-h2 {
-    font-weight: normal;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 40px;
-}
 
 article p {
     font-family: "Poppins", sans-serif;
@@ -64,7 +59,7 @@ article p {
     inset: 0;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 4;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,14 +70,13 @@ article p {
 
 .overlay article {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     align-items: flex-start;
     max-width: 1000px;
-    padding: 100px;
 }
 
 .overlay img {
-    width: 450px;
+    width: 500px;
     border-radius: 15px;
 }
 
@@ -127,7 +121,7 @@ article p {
 
 #pictureoverlaylavender {
     background-image: url("images/everypictureoverlay.png");
-    background-color: rgba(174, 156, 255);
+    background-color: rgb(208, 198, 252);
 }
 
 /* Text boxes */
@@ -137,9 +131,19 @@ article p {
     border-color: #ff8c00;
 }
 
+.orange-box h2 {
+    font-family: "Poppins", sans-serif;
+    color: #ff8c00;
+}
+
+
 .pink-box {
     background-color: #ffe6f3;
     border-color: #ff69b4;
+}
+.pink-box h2 {
+    font-family: "Poppins", sans-serif;
+    color: #ff69b4;
 }
 
 .blue-box {
@@ -147,9 +151,18 @@ article p {
     border-color: #1f78c1;
 }
 
+.blue-box h2 {
+    font-family: "Poppins", sans-serif;
+    color: #3152d6;
+}
+
 .gray-box {
     background-color: #f2f2f2;
     border-color: #555;
+}
+
+.gray-box h2 {
+    font-family: "Poppins", sans-serif;
 }
 
 .green-box {
@@ -157,9 +170,19 @@ article p {
     border-color: #2e8b57;
 }
 
+.green-box h2 {
+    font-family: "Poppins", sans-serif;
+    color: #2e8b57;
+}
+
 .lavender-box {
     background-color: #f3eaff;
     border-color: #9b59b6;
+}
+
+.lavender-box h2 {
+    font-family: "Poppins", sans-serif;
+    color: #9b59b6;
 }
 
 
