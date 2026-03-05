@@ -1,0 +1,112 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #c8d6e5, #b7c9d9);
+}
+
+/* main layout  */
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:250px;
+    background: linear-gradient(#7eb3d6, #166fb4);
+    color:white;
+    padding:30px;
+}
+
+.sidebar h1{
+    font-size:32px;
+    text-align:center;
+}
+
+.instructions{
+    margin-top:40px;
+}
+
+.instructions ul{
+    padding-left:20px;
+}
+
+/* main game area */
+
+.game-area{
+    flex:1;
+    padding:40px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* player layout */
+
+.players{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/* player cards */
+
+.player{
+    text-align:center;
+}
+
+.player h3{
+    background:#2e63a3;
+    color:white;
+    padding:10px 30px;
+    border-radius:4px;
+}
+
+/* avatar placeholder */
+
+.avatar{
+    width:200px;
+    height:200px;
+    border:3px solid #334;
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* scores */
+
+.score{
+    border:3px solid #3f78c6;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+/* buttons */
+
+.roll{
+    background:#152c46;
+    color:white;
+    border:none;
+    padding:12px 40px;
+    margin:5px;
+    border-radius: 10px;
+}
+
+.pass{
+    background:#ddd;
+    border:2px solid #333;
+    padding:12px 40px;
+    margin:5px;
+    border-radius: 10px;
+}
+
+/* DICE
+
+.dice img{
+    width:120px;
+} */
