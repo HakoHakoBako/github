@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breaking Ice</title>
-
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,9 +29,7 @@
 
                 <div class="penguin-circle">
                     <button id="p1Left" class="arrow">&#9664;</button>
-
                     <img id="p1Avatar" src="images/penguinChef.svg">
-
                     <button id="p1Right" class="arrow">&#9654;</button>
                 </div>
 
@@ -50,9 +46,7 @@
 
                 <div class="penguin-circle">
                     <button id="p2Left" class="arrow">&#9664;</button>
-
                     <img id="p2Avatar" src="images/penguinBarista.svg">
-
                     <button id="p2Right" class="arrow">&#9654;</button>
                 </div>
 
@@ -78,11 +72,11 @@
             <h2>Instructions!</h2>
 
             <ul>
-                <li>Roll the dice on your turn</li>
-                <li>If neither die is 1, add the total</li>
-                <li>If one die is 1, your turn ends</li>
-                <li>If two 1s appear (snake eyes), score resets</li>
-                <li>First player to 25 wins</li>
+                <li>Welcome to Breaking Ice! Your goal is to reach 25 points as soon as possible</li>
+                <li>Each player rolls two dice during their turn. If either dice roll isn't a one, each roll adds to the player's score.</li>
+                <li>The player's turn continues until they roll a one, or they can choose to pass. If one of the dice rolls is a one, it will skip the player's turn.</li>
+                <li>However, if both of the player's dice rolls are a one, it will reset the player's score to zero. The player broke the ice!</li>
+                <li>Your goal is to reach 25 points and avoid breaking the ice. Good luck players!</li>
             </ul>
 
         </aside>
@@ -97,46 +91,28 @@
                 <!-- Player 1 -->
 
                 <div class="player">
-
                     <div class="player-label">Player 1</div>
-
-                    <div class="avatar-box" id="player1Avatar">
-                        Avatar
-                    </div>
-
-                    <div class="score-box" id="scoreP1">
-                        Score: 0
-                    </div>
-
+                    <div class="avatar-box" id="player1Avatar">Avatar</div>
+                    <div class="score-box" id="scoreP1">Score: 0</div>
                 </div>
 
 
                 <!-- Dice Area -->
 
                 <div class="dice-area">
-
                     <div id="game">
                         <img src="images/dice1.svg" width="70">
                         <img src="images/dice2.svg" width="70">
                     </div>
-
                 </div>
 
 
                 <!-- Player 2 -->
 
                 <div class="player">
-
                     <div class="player-label">Player 2</div>
-
-                    <div class="avatar-box" id="player2Avatar">
-                        Avatar
-                    </div>
-
-                    <div class="score-box" id="scoreP2">
-                        Score: 0
-                    </div>
-
+                    <div class="avatar-box" id="player2Avatar">Avatar</div>
+                    <div class="score-box" id="scoreP2">Score: 0</div>
                 </div>
 
             </div>
@@ -145,11 +121,9 @@
             <!-- Buttons -->
 
             <div id="actions">
-
                 <button id="roll">Roll</button>
                 <button id="pass">Pass</button>
                 <button id="newGame" style="display:none;">Start New Game</button>
-
             </div>
 
         </main>
