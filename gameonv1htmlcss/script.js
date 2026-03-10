@@ -174,18 +174,18 @@
 
             setTimeout(function(){
                 switchPlayer();
-            },1500);
+            },2000);
         }
 
         // If player rolls a 1
 
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
 
-            titleMessage.textContent = "Rolled a 1! Next Turn!";
+            titleMessage.textContent = "Oops you rolled a 1! Next Turn!";
 
             setTimeout(function(){
                 switchPlayer();
-            },1500);
+            },2000);
         }
 
         // Normal Dice Roll
@@ -228,11 +228,10 @@
 
     function checkWinner(){
 
-        if(gameData.score[gameData.index] > gameData.gameEnd || 
-   gameData.score[gameData.index] === gameData.gameEnd){
+        if(gameData.score[gameData.index] > gameData.gameEnd || gameData.score[gameData.index] === gameData.gameEnd){
 
             titleMessage.textContent =
-                `${gameData.players[gameData.index]} Wins!`;
+                `Amazing! ${gameData.players[gameData.index]} Wins!`;
 
             rollBtn.disabled = true;
             passBtn.disabled = true;
@@ -247,7 +246,6 @@
     // Start a new game
 
     newGameBtn.addEventListener("click", function(){
-
         location.reload();
 
     });
