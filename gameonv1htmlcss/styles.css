@@ -11,7 +11,7 @@ body{
     height:100vh;
 }
 
-/* sidebar */
+/* SIDEBAR */
 
 .sidebar{
     width:250px;
@@ -105,8 +105,106 @@ body{
     border-radius: 10px;
 }
 
-/* dice
+/* DICE
 
 .dice img{
     width:120px;
 } */
+
+/* -----------------------
+AVATAR SELECTION OVERLAY
+----------------------- */
+
+.avatar-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    background: linear-gradient(#78aedd,#9fc2de);
+    z-index:999;
+}
+
+/* title */
+
+.overlay-title{
+    background:#2c78d4;
+    color:white;
+    padding:15px 35px;
+    border-radius:10px;
+    margin-bottom:60px;
+    font-size:28px;
+}
+
+/* layout */
+
+.selection-area{
+    display:flex;
+    gap:120px;
+}
+
+/* player section */
+
+.avatar-picker{
+    text-align:center;
+}
+
+/* avatar circle */
+
+.avatar-display{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+
+    border:6px solid #2d6fa2;
+    border-radius:50%;
+    width:260px;
+    height:260px;
+
+    background:#d9e3ef;
+    margin:20px auto;
+}
+
+.avatar-display img{
+    width:160px;
+}
+
+/* arrows */
+
+.arrow{
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#2d6fa2;
+}
+
+/* avatar names */
+
+.avatar-name{
+    font-size:22px;
+    margin:10px 0;
+}
+
+/* confirm buttons */
+
+.confirm{
+    background:#2d79b5;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.confirm:hover{
+    background:#1e5e90;
+}

@@ -1,77 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameOn! HTML CSS</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src = "script.js">defer</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameOn! HTML CSS</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="script.js" defer></script>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <!-- sidebar -->
-             <aside class="sidebar">
-                <h2>Breaking ICE</h2>
-                <div class="instructions">
-                    <h3>Instructions!</h3>
-                    <ul>
-                        <li>Roll the ice blocks (dice)!! Each player will gain a certain amount of points depending on the rolls!</li>
-                        <li>If you roll a 1 on either of your ice blocks, you'll lose your turn!</li>
-                        <li>If both of your ice blocks are 1's, you'll break the ice!! (your score resets to 0)</li>
-                        <li>First player to 25 points wins! Good luck!</li>
-                    </ul>
-                </div>
-            </aside>
 
-            <!-- main game area -->
-            <section class="game-area">
-                <h2 class="title">Roll the Ice?</h2>
-                <div class="players">
+<!-- AVATAR SELECTION OVERLAY -->
 
-                    <!-- player 1 -->
-                    <div class="player">
-                        <h3>Player 1</h3>
+<div class="avatar-overlay" id="avatarOverlay">
 
-                        <!-- change the avatars to the penguins later -->
-                        <div class="avatar">
-                        </div>
+<h1 class="overlay-title">Choose Your Penguin!</h1>
 
-                        <!-- change the scores into js later -->
-                        <div class="score">
-                        </div>
+<div class="selection-area">
 
-                        <button class="roll">Roll</button>
-                        <button class="pass">Pass</button>
-                    </div>
+<!-- PLAYER 1 -->
 
-                    <!-- dice -->
-                    <div class="dice">
-                        <img src="ice-dice.png" alt="dice">
-                    </div>
+<div class="avatar-picker">
 
-                    <!-- player 2 -->
-                    <div class="player">
-                        <h3>Player 2</h3>
+<h2>Player 1</h2>
 
-                        <!-- change the avatars to the penguins later -->
-                        <div class="avatar">
-                        </div>
-                        <!-- change the scores into js later -->
-                        <div class="score">
-                        </div>
+<div class="avatar-display">
+<button class="arrow left">&#9664;</button>
 
-                        <button class="roll">Roll</button>
-                        <button class="pass">Pass</button>
-                    </div>
+<img id="p1Avatar" src="images/penguinMagician.svg" alt="penguin">
 
-                </div>
+<button class="arrow right">&#9654;</button>
+</div>
 
-            </section>
+<p class="avatar-name">Magician</p>
 
-        </div>
-    </main>
+</div>
+
+
+<!-- PLAYER 2 -->
+
+<div class="avatar-picker">
+
+<h2>Player 2</h2>
+
+<div class="avatar-display">
+<button class="arrow left">&#9664;</button>
+
+<img id="p2Avatar" src="images/penguinBarista.svg" alt="penguin">
+
+<button class="arrow right">&#9654;</button>
+</div>
+
+<p class="avatar-name">Barista</p>
+
+</div>
+
+</div>
+
+<button id="confirmSelection" class="confirm">Start Game</button>
+
+</div>
+
+
+<main>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<h2>Breaking ICE</h2>
+
+<div class="instructions">
+
+<h3>Instructions!</h3>
+
+<ul>
+<li>Roll the ice blocks (dice)!</li>
+<li>If you roll a 1 on either ice block, you lose your turn.</li>
+<li>If both ice blocks are 1's, you break the ice and your score resets to 0.</li>
+<li>First player to 25 points wins!</li>
+
+</ul>
+
+</div>
+
+</aside>
+
+
+<!-- MAIN GAME AREA -->
+
+<section class="game-area">
+
+<h2 class="title">Roll the Ice?</h2>
+
+<div id="gamecontrol"></div>
+
+<div class="players">
+
+
+<!-- PLAYER 1 -->
+
+<div class="player">
+
+<h3>Player 1</h3>
+
+<div class="avatar" id="player1Avatar"></div>
+
+<div class="score" id="score"></div>
+
+</div>
+
+
+<!-- DICE AREA -->
+
+<div class="dice" id="game"></div>
+
+
+<!-- PLAYER 2 -->
+
+<div class="player">
+
+<h3>Player 2</h3>
+
+<div class="avatar" id="player2Avatar"></div>
+
+<div class="score" id="actions"></div>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
 
 </body>
 </html>
