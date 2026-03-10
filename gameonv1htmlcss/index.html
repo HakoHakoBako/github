@@ -1,144 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GameOn! HTML CSS</title>
+
+<title>Breaking Ice</title>
 
 <link rel="stylesheet" href="styles.css">
-
 <script src="script.js" defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<!-- AVATAR SELECTION OVERLAY -->
+<!-- ================= OVERLAY ================= -->
 
-<div class="avatar-overlay" id="avatarOverlay">
+<div id="avatarOverlay">
 
-<h1 class="overlay-title">Choose Your Penguin!</h1>
+<h2>Select Your Penguin</h2>
 
-<div class="selection-area">
+<div class="avatar-selection">
 
-<!-- PLAYER 1 -->
-
-<div class="avatar-picker">
-
-<h2>Player 1</h2>
-
-<div class="avatar-display">
-<button class="arrow left">&#9664;</button>
-
-<img id="p1Avatar" src="images/penguinMagician.svg" alt="penguin">
-
-<button class="arrow right">&#9654;</button>
-</div>
-
-<p class="avatar-name">Magician</p>
-
-</div>
-
-
-<!-- PLAYER 2 -->
+<!-- PLAYER 1 SELECTOR -->
 
 <div class="avatar-picker">
-
-<h2>Player 2</h2>
-
-<div class="avatar-display">
-<button class="arrow left">&#9664;</button>
-
-<img id="p2Avatar" src="images/penguinBarista.svg" alt="penguin">
-
-<button class="arrow right">&#9654;</button>
-</div>
-
-<p class="avatar-name">Barista</p>
-
-</div>
-
-</div>
-
-<button id="confirmSelection" class="confirm">Start Game</button>
-
-</div>
-
-
-<main>
-
-<div class="container">
-
-<!-- SIDEBAR -->
-
-<aside class="sidebar">
-
-<h2>Breaking ICE</h2>
-
-<div class="instructions">
-
-<h3>Instructions!</h3>
-
-<ul>
-<li>Roll the ice blocks (dice)!</li>
-<li>If you roll a 1 on either ice block, you lose your turn.</li>
-<li>If both ice blocks are 1's, you break the ice and your score resets to 0.</li>
-<li>First player to 25 points wins!</li>
-
-</ul>
-
-</div>
-
-</aside>
-
-
-<!-- MAIN GAME AREA -->
-
-<section class="game-area">
-
-<h2 class="title">Roll the Ice?</h2>
-
-<div id="gamecontrol"></div>
-
-<div class="players">
-
-
-<!-- PLAYER 1 -->
-
-<div class="player">
 
 <h3>Player 1</h3>
 
-<div class="avatar" id="player1Avatar"></div>
+<button id="p1Left">&#8592;</button>
 
-<div class="score" id="score"></div>
+<img id="p1Avatar" src="images/penguinChef.svg" width="120">
+
+<button id="p1Right">&#8594;</button>
 
 </div>
 
+<!-- PLAYER 2 SELECTOR -->
+
+<div class="avatar-picker">
+
+<h3>Player 2</h3>
+
+<button id="p2Left">&#8592;</button>
+
+<img id="p2Avatar" src="images/penguinBarista.svg" width="120">
+
+<button id="p2Right">&#8594;</button>
+
+</div>
+
+</div>
+
+<button id="confirmSelection">Start Game</button>
+
+</div>
+
+<!-- ================= MAIN LAYOUT ================= -->
+
+<div class="container">
+
+<!-- LEFT SIDEBAR -->
+
+<aside class="sidebar">
+
+<h1>Breaking<br>ICE</h1>
+
+<h2>Instructions!</h2>
+
+<ul>
+<li>Roll the dice on your turn</li>
+<li>If neither die is 1, add the total</li>
+<li>If one die is 1, your turn ends</li>
+<li>If two 1s appear (snake eyes), score resets</li>
+<li>First player to 25 wins</li>
+</ul>
+
+</aside>
+
+<!-- GAME AREA -->
+
+<main class="game-area">
+
+<h2 class="title">Roll the Ice?</h2>
+
+<div class="players">
+
+<!-- PLAYER 1 -->
+
+<div class="player">
+
+<div class="player-label">Player 1</div>
+
+<div class="avatar-box" id="player1Avatar">
+Avatar
+</div>
+
+<div class="score-box" id="scoreP1">
+Score: 0
+</div>
+
+</div>
 
 <!-- DICE AREA -->
 
-<div class="dice" id="game"></div>
+<div class="dice-area">
 
+<div id="game">
+
+<img src="images/dice1.svg" width="70">
+<img src="images/dice2.svg" width="70">
+
+</div>
+
+</div>
 
 <!-- PLAYER 2 -->
 
 <div class="player">
 
-<h3>Player 2</h3>
+<div class="player-label">Player 2</div>
 
-<div class="avatar" id="player2Avatar"></div>
+<div class="avatar-box" id="player2Avatar">
+Avatar
+</div>
 
-<div class="score" id="actions"></div>
-
+<div class="score-box" id="scoreP2">
+Score: 0
 </div>
 
 </div>
 
-</section>
+</div>
+
+<!-- BUTTONS -->
+
+<div id="actions">
+
+<button id="roll">Roll</button>
+
+<button id="pass">Pass</button>
 
 </div>
 
 </main>
 
+</div>
+
 </body>
+
 </html>

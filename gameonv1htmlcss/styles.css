@@ -1,210 +1,200 @@
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #c8d6e5, #b7c9d9);
+margin:0;
+font-family:Arial;
+background:linear-gradient(#b7d1e6,#7fa8cf);
 }
-
-/* main layout  */
 
 .container{
-    display:flex;
-    height:100vh;
+display:flex;
+height:100vh;
 }
 
-/* SIDEBAR */
+/* sidebar */
 
 .sidebar{
-    width:250px;
-    background: linear-gradient(#7eb3d6, #166fb4);
-    color:white;
-    padding:30px;
+width:260px;
+background:#2874a6;
+color:white;
+padding:30px;
 }
 
 .sidebar h1{
-    font-size:32px;
-    text-align:center;
+font-family:"Cherry Bomb One";
+font-size:40px;
 }
 
-.instructions{
-    margin-top:40px;
+.sidebar ul{
+margin-top:20px;
+line-height:1.6;
 }
 
-.instructions ul{
-    padding-left:20px;
-}
-
-/* main game area */
+/* main area */
 
 .game-area{
-    flex:1;
-    padding:40px;
+flex:1;
+text-align:center;
+padding-top:40px;
 }
 
 .title{
-    text-align:center;
-    margin-bottom:40px;
+font-family:"Cherry Bomb One";
+font-size:40px;
+color:#1a2c44;
 }
 
-/* player layout */
+/* players layout */
 
 .players{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+display:flex;
+justify-content:space-around;
+align-items:center;
+margin-top:30px;
 }
 
-/* player cards */
+/* player column */
 
 .player{
-    text-align:center;
+text-align:center;
 }
 
-.player h3{
-    background:#2e63a3;
-    color:white;
-    padding:10px 30px;
-    border-radius:4px;
+.player-label{
+background:#3c6fb3;
+color:white;
+padding:10px 30px;
+border-radius:5px;
+font-family:"Cherry Bomb One";
 }
 
-/* avatar placeholder */
+/* avatar */
 
-.avatar{
-    width:200px;
-    height:200px;
-    border:3px solid #334;
-    margin:20px auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.avatar-box{
+width:200px;
+height:200px;
+background:#eaeaea;
+border:4px solid #233a4f;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:20px auto;
 }
 
-/* scores */
+/* score */
 
-.score{
-    border:3px solid #3f78c6;
-    padding:10px;
-    margin-bottom:20px;
+.score-box{
+border:4px solid #3c6fb3;
+padding:10px;
+font-size:20px;
+font-weight:bold;
+background:white;
+}
+
+/* dice */
+
+.dice-area{
+width:200px;
 }
 
 /* buttons */
 
-.roll{
-    background:#152c46;
-    color:white;
-    border:none;
-    padding:12px 40px;
-    margin:5px;
-    border-radius: 10px;
+#actions{
+margin-top:40px;
 }
 
-.pass{
-    background:#ddd;
-    border:2px solid #333;
-    padding:12px 40px;
-    margin:5px;
-    border-radius: 10px;
+#roll{
+background:#132c4a;
+color:white;
+border:none;
+padding:15px 80px;
+font-size:18px;
+border-radius:5px;
+margin-bottom:15px;
 }
 
-/* DICE
+#pass{
+background:white;
+border:2px solid #132c4a;
+padding:15px 80px;
+font-size:18px;
+}
 
-.dice img{
-    width:120px;
-} */
+#avatarOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
 
-/* -----------------------
-AVATAR SELECTION OVERLAY
------------------------ */
+background:linear-gradient(#7fa8cf,#b7d1e6);
 
-.avatar-overlay{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    background: linear-gradient(#78aedd,#9fc2de);
-    z-index:999;
+z-index:9999;
 }
 
 /* title */
 
-.overlay-title{
-    background:#2c78d4;
-    color:white;
-    padding:15px 35px;
-    border-radius:10px;
-    margin-bottom:60px;
-    font-size:28px;
+#avatarOverlay h2{
+font-family:"Cherry Bomb One";
+font-size:40px;
+color:#1a2c44;
+margin-bottom:40px;
 }
 
-/* layout */
+/* avatar selector layout */
 
-.selection-area{
-    display:flex;
-    gap:120px;
+.avatar-selection{
+display:flex;
+gap:120px;
+align-items:center;
+margin-bottom:40px;
 }
 
-/* player section */
+/* each player picker */
 
 .avatar-picker{
-    text-align:center;
+text-align:center;
 }
 
-/* avatar circle */
-
-.avatar-display{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:20px;
-
-    border:6px solid #2d6fa2;
-    border-radius:50%;
-    width:260px;
-    height:260px;
-
-    background:#d9e3ef;
-    margin:20px auto;
-}
-
-.avatar-display img{
-    width:160px;
+.avatar-picker h3{
+font-family:"Cherry Bomb One";
+font-size:28px;
+color:#1a2c44;
+margin-bottom:20px;
 }
 
 /* arrows */
 
-.arrow{
-    border:none;
-    background:none;
-    font-size:28px;
-    cursor:pointer;
-    color:#2d6fa2;
+.avatar-picker button{
+background:none;
+border:none;
+font-size:40px;
+cursor:pointer;
+color:#1a2c44;
 }
 
-/* avatar names */
+/* avatar preview */
 
-.avatar-name{
-    font-size:22px;
-    margin:10px 0;
+.avatar-picker img{
+width:140px;
+margin:0 20px;
 }
 
-/* confirm buttons */
+/* start button */
 
-.confirm{
-    background:#2d79b5;
-    color:white;
-    border:none;
-    padding:12px 30px;
-    border-radius:10px;
-    font-size:18px;
-    cursor:pointer;
+#confirmSelection{
+margin-top:30px;
+background:#2f6fb0;
+color:white;
+border:none;
+padding:15px 50px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
 }
 
-.confirm:hover{
-    background:#1e5e90;
+#confirmSelection:hover{
+background:#1d4f86;
 }
