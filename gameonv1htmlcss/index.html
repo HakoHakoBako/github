@@ -2,154 +2,159 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Ice</title>
 
-<title>Breaking Ice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ================= OVERLAY ================= -->
+    <!-- Overlay -->
 
-<div id="avatarOverlay">
+    <div id="avatarOverlay">
 
-<h2>Select Your Penguin</h2>
+        <h2 class="overlayTitle">Choose Your Penguin!</h2>
 
-<div class="avatar-selection">
+        <div class="avatar-selection">
 
-<!-- PLAYER 1 SELECTOR -->
+            <!-- Player 1 -->
 
-<div class="avatar-picker">
+            <div class="avatar-picker">
 
-<h3>Player 1</h3>
+                <h3>Player 1</h3>
 
-<button id="p1Left">&#8592;</button>
+                <div class="penguin-circle">
+                    <button id="p1Left" class="arrow">&#9664;</button>
 
-<img id="p1Avatar" src="images/penguinChef.svg" width="120">
+                    <img id="p1Avatar" src="images/penguinChef.svg">
 
-<button id="p1Right">&#8594;</button>
+                    <button id="p1Right" class="arrow">&#9654;</button>
+                </div>
 
-</div>
+                <p class="penguinName" id="p1Name">Chef</p>
 
-<!-- PLAYER 2 SELECTOR -->
+            </div>
 
-<div class="avatar-picker">
 
-<h3>Player 2</h3>
+            <!-- Player 2 -->
 
-<button id="p2Left">&#8592;</button>
+            <div class="avatar-picker">
 
-<img id="p2Avatar" src="images/penguinBarista.svg" width="120">
+                <h3>Player 2</h3>
 
-<button id="p2Right">&#8594;</button>
+                <div class="penguin-circle">
+                    <button id="p2Left" class="arrow">&#9664;</button>
 
-</div>
+                    <img id="p2Avatar" src="images/penguinBarista.svg">
 
-</div>
+                    <button id="p2Right" class="arrow">&#9654;</button>
+                </div>
 
-<button id="confirmSelection">Start Game</button>
+                <p class="penguinName" id="p2Name">Barista</p>
 
-</div>
+            </div>
 
-<!-- ================= MAIN LAYOUT ================= -->
+        </div>
 
-<div class="container">
+        <button id="confirmSelection">Start Game</button>
 
-<!-- LEFT SIDEBAR -->
+    </div>
 
-<aside class="sidebar">
 
-<h1>Breaking<br>ICE</h1>
+    <!-- Main Game  -->
 
-<h2>Instructions!</h2>
+    <div class="container">
 
-<ul>
-<li>Roll the dice on your turn</li>
-<li>If neither die is 1, add the total</li>
-<li>If one die is 1, your turn ends</li>
-<li>If two 1s appear (snake eyes), score resets</li>
-<li>First player to 25 wins</li>
-</ul>
+        <aside class="sidebar">
 
-</aside>
+            <h1>Breaking<br>ICE</h1>
 
-<!-- GAME AREA -->
+            <h2>Instructions!</h2>
 
-<main class="game-area">
+            <ul>
+                <li>Roll the dice on your turn</li>
+                <li>If neither die is 1, add the total</li>
+                <li>If one die is 1, your turn ends</li>
+                <li>If two 1s appear (snake eyes), score resets</li>
+                <li>First player to 25 wins</li>
+            </ul>
 
-<h2 class="title">Roll the Ice?</h2>
+        </aside>
 
-<div class="players">
 
-<!-- PLAYER 1 -->
+        <main class="game-area">
 
-<div class="player">
+            <h2 class="title">Roll the Ice?</h2>
 
-<div class="player-label">Player 1</div>
+            <div class="players">
 
-<div class="avatar-box" id="player1Avatar">
-Avatar
-</div>
+                <!-- Player 1 -->
 
-<div class="score-box" id="scoreP1">
-Score: 0
-</div>
+                <div class="player">
 
-</div>
+                    <div class="player-label">Player 1</div>
 
-<!-- DICE AREA -->
+                    <div class="avatar-box" id="player1Avatar">
+                        Avatar
+                    </div>
 
-<div class="dice-area">
+                    <div class="score-box" id="scoreP1">
+                        Score: 0
+                    </div>
 
-<div id="game">
+                </div>
 
-<img src="images/dice1.svg" width="70">
-<img src="images/dice2.svg" width="70">
 
-</div>
+                <!-- Dice Area -->
 
-</div>
+                <div class="dice-area">
 
-<!-- PLAYER 2 -->
+                    <div id="game">
+                        <img src="images/dice1.svg" width="70">
+                        <img src="images/dice2.svg" width="70">
+                    </div>
 
-<div class="player">
+                </div>
 
-<div class="player-label">Player 2</div>
 
-<div class="avatar-box" id="player2Avatar">
-Avatar
-</div>
+                <!-- Player 2 -->
 
-<div class="score-box" id="scoreP2">
-Score: 0
-</div>
+                <div class="player">
 
-</div>
+                    <div class="player-label">Player 2</div>
 
-</div>
+                    <div class="avatar-box" id="player2Avatar">
+                        Avatar
+                    </div>
 
-<!-- BUTTONS -->
+                    <div class="score-box" id="scoreP2">
+                        Score: 0
+                    </div>
 
-<div id="actions">
+                </div>
 
-<button id="roll">Roll</button>
+            </div>
 
-<button id="pass">Pass</button>
 
-</div>
+            <!-- Buttons -->
 
-</main>
+            <div id="actions">
 
-</div>
+                <button id="roll">Roll</button>
+                <button id="pass">Pass</button>
+                <button id="newGame" style="display:none;">Start New Game</button>
+
+            </div>
+
+        </main>
+
+    </div>
 
 </body>
-
 </html>
