@@ -156,6 +156,11 @@ body{
     margin-bottom:15px;
 }
 
+#newGame:hover {
+    background:rgb(68, 174, 255);
+    
+}
+
 
 /* Selecting avatar overlay */
 
