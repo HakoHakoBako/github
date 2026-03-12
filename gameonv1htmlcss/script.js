@@ -8,8 +8,8 @@ console.log("reading.js");
 const clickSound = new Audio("sounds/icesound.mp3");
 const winSound = new Audio("sounds/winsound.mp3");
 
-clickSound.volume = 0.4;
-winSound.volume = 0.7;
+clickSound.volume = 1;
+winSound.volume = 1;
 
 
 // Overlay
