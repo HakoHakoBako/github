@@ -1,0 +1,298 @@
+body{
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    background-image:url("images/iceOverlayGameplay.svg"),linear-gradient(#d2ebff,#5fb2ff);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+html, body{
+    height:100%;
+}
+
+
+/* Sidebar Instructions */
+
+.sidebar{
+    width:280px;
+    background:#2874a6;
+    color:white;
+    padding:20px;
+    
+}
+
+.sidebar h1{
+    font-family:"Cherry Bomb One";
+    font-size:36px;
+}
+
+.sidebar ul{
+    margin-top:10px;
+    line-height:1.4;
+}
+
+
+/* Game Area */
+
+.game-area{
+    flex:1;
+    text-align:center;
+}
+
+.title{
+    font-family:"Cherry Bomb One";
+    font-size:40px;
+    color:#1a2c44;
+}
+
+
+/* Player layout */
+
+.players{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-top:30px;
+}
+
+.player{
+    text-align:center;
+}
+
+.player-label{
+    background:#3c6fb3;
+    color:white;
+    padding:14px 40px;
+    border-radius:6px;
+    font-family:"Cherry Bomb One";
+    font-size:24px;
+}
+
+
+/* Avatar */
+
+.avatar-box{
+    width:260px;
+    height:260px;
+    background:#eaeaea;
+    border:5px solid #233a4f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:25px auto;
+}
+
+.avatar-box img{
+    width:180px;
+}
+
+
+/* score boxes */
+
+.score-box{
+    border:4px solid #3c6fb3;
+    padding:14px;
+    font-size:24px;
+    font-family: "Poppins", sans-serif;
+    font-weight:bold;
+    background:white;
+}
+
+
+/* Dice */
+
+.dice-area{
+    width:220px;
+}
+
+.dice-area img{
+    width:120px;
+    margin:0 5px;
+}
+
+
+/* Action Buttons */
+
+#actions{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    transform: translateY(-80px);
+}
+
+#roll{
+    background:#132c4a;
+    border:2px solid #132c4a;
+    font-family: "Poppins", sans-serif;
+    color:white;
+    padding:15px 80px;
+    font-size:18px;
+    border-radius:5px;
+}
+
+#roll:hover{
+    background: rgb(43, 87, 232);
+    color: #ffffff;
+    border:2px solid #132c4a;
+}
+
+#pass{
+    background:white;
+    border:2px solid #132c4a;
+    font-family: "Poppins", sans-serif;
+    padding:15px 75px;
+    font-size:18px;
+    border-radius:5px;
+}
+
+#pass:hover{
+    background:#6290bf;
+    color: white;
+}
+
+#newGame{
+    background:#0a4882;
+    color:white;
+    border:none;
+    margin-top:25px;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:5px;
+}
+
+#newGame:hover{
+    background:rgb(68, 174, 255);
+}
+
+
+/* Selecting avatar overlay */
+
+#avatarOverlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url("images/iceOverlay.svg"),linear-gradient(0deg, rgba(237,249,255,1) 15%, rgb(68, 174, 255) 67%);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    z-index:1;
+}
+
+
+/* Overlay Title */
+
+.overlayTitle{
+    font-family:"Cherry Bomb One";
+    font-size:36px;
+    background:#0e5dac;
+    color:white;
+    padding:15px 40px;
+    border-radius:12px;
+    margin-bottom:60px;
+}
+
+
+/* Selecting avatar */
+
+.avatar-selection{
+    display:flex;
+    gap:160px;
+    align-items:center;
+}
+
+
+/* Player Picker */
+
+.avatar-picker{
+    text-align:center;
+}
+
+.avatar-picker h3{
+    font-family:"Cherry Bomb One";
+    font-size:28px;
+    color:#1a2c44;
+    margin-bottom:20px;
+}
+
+
+/* Penguin Circle */
+
+.penguin-circle{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    border:8px solid #2a6fa3;
+    background:#dfe7ef;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.penguin-circle img{
+    width:170px;
+}
+
+
+/* Arrows */
+
+.arrow{
+    position:absolute;
+    background:none;
+    border:none;
+    font-size:40px;
+    cursor:pointer;
+    color:#2a6fa3;
+}
+
+#p1Left,#p2Left{
+    left:-70px;
+}
+
+#p1Right,#p2Right{
+    right:-70px;
+}
+
+
+/* Penguin Name */
+
+.penguinName{
+    font-family:"Cherry Bomb One";
+    font-size:26px;
+    color:#1a2c44;
+    margin-top:20px;
+}
+
+
+/* GameStart */
+
+#confirmSelection{
+    font-family: "Poppins", sans-serif;
+    margin-top:40px;
+    background:#2f6fb0;
+    color:white;
+    border:none;
+    padding:15px 60px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#confirmSelection:hover{
+    background:#1c4d7e;
+}
